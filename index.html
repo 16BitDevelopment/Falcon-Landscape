@@ -137,6 +137,39 @@
                 text-decoration: none;
                 font-weight: 700;
             }
+
+            @media (max-width: 1100px) {
+                header {
+                    flex-direction: column;
+                    height: unset;
+                    padding: 100px 0;
+
+                    text-align: center;
+                }
+
+                header .title-text {
+                    align-items: center;
+                }
+
+                header .logo {
+                    height: unset;
+                    width: 75%;
+                }
+            }
+
+            @media (max-width: 800px) {
+                body {
+                    font-size: 0.75rem;
+                }
+
+                header .title-text .business-name {
+                    font-size: 2em;
+                }
+
+                .reviews {
+                    grid-template-columns: 1fr;
+                }
+            }
         </style>
     </head>
     <body>
